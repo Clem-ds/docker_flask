@@ -1,0 +1,57 @@
+<html>  
+    <head>  
+        <title>upload</title>  
+    </head>  
+    <body>  
+        <form action = "/success" method = "post" enctype="multipart/form-data">  
+
+            <div class="form-example">
+                
+                <label for="file">Fichier des inscrits:</label>
+                <input type="file" name="fileinscrits"  required/>  
+                
+            </div>
+
+            
+            <div class="form-example">
+                <label for="start">Date du fichier des inscrits:</label>
+                <input type="date" id="start" name="startfile" required>
+            </div>
+
+            <div class="form-example">
+                
+                <label for="file">Fichier des tps:</label>
+                <input type="file" name="filetps"  required/>  
+                
+            </div>
+
+            
+            <div class="form-example">
+                <label for="start">Date du fichier des tps:</label>
+                <input type="date" id="start" name="startfiletps" required>
+            </div>
+
+            <div class="form-example">
+                
+                <label for="file">Table de correspondance:</label>
+                <input type="file" name="filecorresp"  required/>  
+                
+            </div>
+
+
+            <div class="form-example">   
+                <input type = "submit" value="Upload">  
+            </div>
+
+
+
+        </form>  
+
+        <form action="/" method="POST">
+            <input type="submit" value="Retour vers les visualisations" 
+                name="Submit" id="retour" />
+          </form>
+        
+
+    </body>  
+    </html>  

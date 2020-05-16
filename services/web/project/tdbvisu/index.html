@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="UTF-8">
+    <title>Visu TDB</title>
+    <!--<link rel="stylesheet" href="./styles/styles.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/styles.css') }}">
+    <!--<script src="./pkg/d3.min.js"></script>-->
+    <script src="{{ url_for('static', filename = 'pkg/d3.min.js') }}"></script>
+    
+  </head>
+  <body class='content'>
+      <div class="cards-list">
+          <!--
+          <div class="card 1">
+            <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
+            <div class="card_title title-white">
+              <p id='cardtest'></p>
+            </div>
+          </div>
+          -->
+            <div class="card 2">
+              
+            <div class="card_image">
+              <!--<img src="./img/orange.jpg" />-->
+              <img src="{{ url_for('static', filename = 'img/orange.jpg') }}" />
+              
+              </div>
+            <div class="card_title title-black">
+                <p>Nombre de CDI (hors TPS)</p>
+              </div>
+            <div class="card_value title-black">
+                <p id='nbcdi'></p>
+              </div>
+            
+          </div>
+          
+          <div class="card 3">
+            <div class="card_image">
+            <!--  <img src="./img/img1.gif" />-->
+            </div>
+            <div class="card_title title-black">
+              <p>Nombre de CDD</p>
+            </div>
+          <div class="card_value title-black">
+              <p id='nbcdd'></p>
+            </div>
+          </div>
+            
+            <div class="card 4">
+            <div class="card_image">
+            <!--  <img src="./img/img2.gif" />-->
+              </div>
+              <div class="card_title title-black">
+                <p>Nombre d'alternants</p>
+              </div>
+            <div class="card_value title-black">
+                <p id='nbalt'></p>
+              </div>
+            </div>
+          
+          </div>
+
+    
+    <div class='container'>
+            <div id="map"></div>
+        </div>
+
+    <div>
+      <svg width="960" height="500" id='svg1'></svg>
+    </div>
+
+    <div>
+    <svg width="960" height="500" id="svg9"></svg>
+    </div>
+
+    <div>
+      <div ><svg width="960" height="500" id="svg2"></svg></div>
+      <div ><svg width="960" height="500" id='svg3'></svg></div>
+      <div ><svg width="960" height="500" id="svg4"></svg></div>
+    </div>
+
+
+    <svg width="960" height="500" id='svg5'></svg>
+    <svg width="960" height="500" id="svg6"></svg>
+    
+    <svg width="960" height="500" id="svg7"></svg>
+    <div class='container' style='text-align: center;'>
+      <div id='tabrecext' style='display: inline-block;'></div>
+    </div>
+    
+    <svg width="960" height="500" id="svg8"></svg>
+    
+
+    <!--<script src="./js/index.js"></script>-->
+  </body class='content'>
+</html>
